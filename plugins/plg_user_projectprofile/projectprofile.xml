@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id$ -->
+<extension type="plugin" group="user" version="2.5.0" method="upgrade">
+	<name>PLG_USER_PROJECTPROFILE</name>
+	<version>1.0.0</version>
+	<creationDate>2013-09-17</creationDate>
+	<author>Prasit Gebsaap</author>
+	<copyright>Copyright 2013 Prasit Gebsaap. All rights reserved.	</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<authorEmail>soap@ji-net.com</authorEmail>
+	<authorUrl>www.joomlant.com</authorUrl>
+	<description>PLG_USER_PROJECTPROFILE_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.html</filename>
+		<filename plugin="projectprofile">projectprofile.php</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
+		<folder>profiles</folder>
+	</files>
+</extension>
+
