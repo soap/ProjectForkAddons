@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+    <name>Projectfork Automatic Configuration Setting</name>
+    <packagename>pfsettings</packagename>
+    <version>1.0.0</version>
+    <url>http://www.joomlant.org</url>
+    <creationDate>October 2013</creationDate>
+    <copyright>(C) 2013 Prasit Gebsaap. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>prasit.gebsaap@gmail.com</authorEmail>
+    <authorUrl>www.joomlant.org</authorUrl>
+    <author>Prasit Gebsaap</author>
+    <packager>PFsettings</packager>
+    <packagerurl>http://www.joomlant.org</packagerurl>
+    <description></description>
+    <scriptfile>pkg_pfsettings.script.php</scriptfile>
+    <files>
+        <!-- Install plugins -->
+        <file type="plugin" id="pfsystem" group="system">plugins/plg_system_pfsystem</file>
+        <file type="plugin" id="projectprofile" group="user">plugins/plg_user_projectprofile</file>
+    </files>
+    <updateservers>
+    </updateservers>
+</extension>
