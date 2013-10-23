@@ -1,5 +1,14 @@
 <?php
 defined('_JEXEC') or die;
+/**
+ * ProjectFork User Profile Setting
+ *
+ * @package		ProjectFork
+ * @subpackage	plg_user_projectprofile
+ * @author Prasit Gebsaap
+ * @copyright (C) 2013 Prasit Gebsaap
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
 
 class plgUserProjectprofile extends JPlugin
 {
@@ -148,6 +157,14 @@ class plgUserProjectprofile extends JPlugin
 		return true;
 	}
 
+	/**
+	 * 
+	 * @param array 		$data
+	 * @param boolean 		$isNew
+	 * @param unknown_type 	$result
+	 * @param unknown_type 	$error
+	 * @throws Exception
+	 */
 	function onUserAfterSave($data, $isNew, $result, $error)
 	{
 		$userId	= JArrayHelper::getValue($data, 'id', 0, 'int');

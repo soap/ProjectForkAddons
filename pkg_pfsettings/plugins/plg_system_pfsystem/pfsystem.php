@@ -5,9 +5,13 @@ defined('_JEXEC') or die;
  * ProjectFork System Setting
  *
  * @package		ProjectFork
- * @subpackage	plg_system_projectfork
+ * @subpackage	plg_system_pfsystem
+ * @author Prasit Gebsaap
+ * @copyright (C) 2013 Prasit Gebsaap
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
-class plgSystemProjectFork extends JPlugin
+
+class plgSystemPfSystem extends JPlugin
 {
 	function onAfterRoute()
 	{

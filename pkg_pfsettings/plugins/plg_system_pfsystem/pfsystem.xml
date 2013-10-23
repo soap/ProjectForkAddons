@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Id$ -->
 <extension type="plugin" group="system" version="2.5.0" method="upgrade">
-	<name>PLG_SYSTEM_PROJECTFORK</name>
-	<version>1.0</version>
+	<name>PLG_SYSTEM_PFSYSTEM</name>
+	<version>1.0.0</version>
 	<creationDate>2013-09-17</creationDate>
 	<author>Prasit Gebsaap</author>
-	<copyright>Copyright 2013 Prasit Gebsaap. All rights reserved.	</copyright>
-	<license>GNU General Public License version 2 or later.</license>
+	<copyright>Copyright 2013 Prasit Gebsaap. All rights reserved.</copyright>
+	<license>GNU General Public License version 3.</license>
 	<authorEmail>soap@ji-net.com</authorEmail>
 	<authorUrl>www.joomlant.com</authorUrl>
-	<description>PLG_SYSTEM_PROJECTFORK_XML_DESCRIPTION</description>
+	<description>PLG_SYSTEM_PFSYSTEM_XML_DESCRIPTION</description>
 	<files>
 		<filename>index.html</filename>
-		<filename plugin="projectfork">projectfork.php</filename>
+		<filename plugin="pfsystem">pfsystem.php</filename>
 		<folder>language</folder>
 	</files>
 	<config>
@@ -21,8 +21,8 @@
 				<field
 					name="restrict_usergroups" 
 					type="list" default="0" 
-					label="PLG_SYSTEM_RESTRICT_USER_GROUPS" 
-					description="PLG_SYSTEM_RESTRICT_USER_GROUPS_DESC">
+					label="PLG_SYSTEM_PFSYSTEM_RESTRICT_USER_GROUPS" 
+					description="PLG_SYSTEM_PFSYSTEM_RESTRICT_USER_GROUPS_DESC">
                     	<option value="0">JNO</option>
                     	<option value="1">JYES</option>
                 </field>
@@ -31,8 +31,8 @@
         			type="usergroup" default="" 
         			multiple="true" 
         			size="10" 
-        			label="PLG_SYSTEM_RESTRICTED_USER_GROUPS" 
-        			description="PLG_SYSTEM_RESTRICTED_USER_GROUPS_DESC" />
+        			label="PLG_SYSTEM_PFSYSTEM_RESTRICTED_USER_GROUPS" 
+        			description="PLG_SYSTEM_PFSYSTEM_RESTRICTED_USER_GROUPS_DESC" />
         	</fieldset>
 		</fields>
 	</config>
