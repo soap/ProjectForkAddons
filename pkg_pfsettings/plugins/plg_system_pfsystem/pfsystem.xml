@@ -2,7 +2,7 @@
 <!-- $Id$ -->
 <extension type="plugin" group="system" version="2.5.0" method="upgrade">
 	<name>PLG_SYSTEM_PFSYSTEM</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<creationDate>2013-09-17</creationDate>
 	<author>Prasit Gebsaap</author>
 	<copyright>Copyright 2013 Prasit Gebsaap. All rights reserved.</copyright>

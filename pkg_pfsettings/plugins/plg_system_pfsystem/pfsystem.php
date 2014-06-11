@@ -50,14 +50,15 @@ class plgSystemPfSystem extends JPlugin
 		if (PFApplicationHelper::exists($component)) {
 			if (!PFApplicationHelper::getActiveProjectId() && $user->get('id')) {
 				$db = JFactory::getDbo();
-				$db->setQuery(
-					'SELECT profile_value FROM #__user_profiles' .
-					' WHERE user_id = '.(int) $userId." AND profile_key = ".$db->quote('profile.default_project_id') .
-					' ORDER BY ordering'
-				);
-				
-        		$default_project_id = $db->loadObjectList();
+				$db->select('profile_value')
+					->from('#__user_profiles')
+					->where('user_id=' . (int)$userId)
+					->where('profile_key=' . $db->quote('profile.default_project_id'))
+					->order('ordering ASC');
+				$db->setQuery($query);
+        		$default_project_id = $db->loadResult();
         		if ($default_project_id)
+        			/** @todo Check authorisation first before apply it*/
 					PFApplicationHelper::setActiveProject($default_project_id);	
 			}	
 		}
